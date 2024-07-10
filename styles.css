@@ -1,0 +1,341 @@
+/*...........Encabezado.............*/
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.header {
+    margin: 1rem auto;
+}
+
+.header__logo {
+    margin-left: 3rem;
+    width: 80px;
+    height: 80px;
+}
+
+.header {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(0, 79%, 41%);
+    /* Color de fondo */
+    box-shadow: 0 7px 5px rgba(38, 37, 37, 0.25);
+
+}
+
+.header_info {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header__title {
+    font-family: sans-serif;
+    font-size: 44px;
+    margin-left: 2rem;
+    color: #F5F5F5;
+}
+
+/*...........Productos.............*/
+
+.pagina_principal {
+    display: flex;
+    margin: 30px 15px 10px 0px;
+    gap: 40px;
+    height: auto;
+}
+
+.subtitulo {
+    display: flex;
+    justify-content: center;
+}
+
+
+#lista-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    overflow-y: auto;
+    height: 600px;
+    background-color: hsl(0, 4%, 55%);
+    box-shadow: -8px 10px 5px rgba(66, 61, 61, 0.25);
+    margin-left: 20px;
+    width: 1400px;
+    text-align: center;
+
+}
+
+.formulario-container {
+    text-align: center;
+    width: 40%;
+    padding-top: 15px;
+    margin-left: 20px;
+
+}
+
+.card {
+    display: flex;
+    max-width: 220px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.producto-img {
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 4%;
+    border: 3px solid #151414;
+    transition: transform 0.3s ease-in-out;
+}
+
+.seccion_productos {
+    width: 100%;
+
+}
+
+.producto-img:hover {
+    transform: scale(1.1);
+}
+
+.card-container--info {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-left: 95px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card-container--value {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 90px;
+    align-items: center;
+}
+
+.delete-button {
+    cursor: pointer;
+}
+
+.delete_logo {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.datos-formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px 30px 5px 0;
+}
+
+.input_nombre {
+    border-radius: 50px;
+    padding: .8rem 2rem .8rem 1rem;
+    background-color: #F5F5F5;
+    border: none;
+    border-radius: 5rem;
+    font-size: 16px;
+    outline: auto;
+}
+
+.input_precio {
+    border-radius: 50px;
+    padding: .8rem 2rem .8rem 1rem;
+    background-color: #F5F5F5;
+    border: none;
+    border-radius: 5rem;
+    font-size: 16px;
+    outline: auto;
+}
+
+.input_imagen {
+    border-radius: 50px;
+    padding: .8rem 2rem .8rem 1rem;
+    background-color: #F5F5F5;
+    border: none;
+    border-radius: 5rem;
+    font-size: 16px;
+    outline: auto;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+}
+
+#boton-enviar {
+    color: white;
+    border-color: hsl(0, 79%, 41%);
+    background-color: hsl(0, 79%, 41%);
+}
+
+#boton-enviar:hover {
+    color: #fefeff;
+    background-color:  #b11818;
+    border-color: #ffffff;
+}
+
+#boton-limpiar {
+    color: hsl(0, 79%, 41%);
+    border-color: hsl(0, 79%, 41%);
+    background-color: white;
+}
+
+#boton-limpiar:hover {
+    color: #b11818;
+    background-color: #ffffff;
+    border-color: #b11818;
+}
+
+#boton-enviar,
+#boton-limpiar {
+    width: 30%;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 3px solid hsl(0, 21%, 22%);
+    margin-right: 10px;
+}
+
+/*-------Estilos para el pie de página*/
+.piedepagina {
+    color: #ffffff;
+    background-image: url("/imagenes/background.jpg");
+    padding: 2px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.piedepagina ul {
+    list-style: none;
+    padding: 2;
+    margin: 0%;
+}
+
+.piedepagina ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.piedepagina ul li a img {
+    border: none;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+
+    .header__logo {
+        margin-left: 30px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .pagina_principal {
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .header {
+        gap: 6px;
+    }
+
+    .header__title {
+        font-size: 35px;
+    }
+
+    .subtitulo {
+        padding: 10px 0 30px 0;
+    }
+
+    #lista-card {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        background-color: hsl(0, 4%, 55%);
+        margin-left: 28px;
+        width: 90%;
+    }
+
+    .formulario-container {
+        width: 100%;
+        padding-top: 15px;
+        margin-left: 20px;
+
+    }
+
+    #formulario-producto {
+        padding: 10px;
+    }
+
+    .subtitulo-formulario {
+        padding: 0 50px 10px 0;
+
+    }
+
+    .input {
+        font-size: 18px;
+        height: 55px;
+    }
+
+    .botones {
+        display: flex;
+        justify-content: center;
+        margin-left: 30px;
+    }
+
+    .boton-enviar,
+    .boton-limpiar {
+        height: 60px;
+    }
+
+    .boton-enviar,
+    .boton-limpiar {
+        width: 50%;
+    }
+
+    .pie-de-pagina {
+        justify-content: center;
+        align-items: center;
+        font-size: 11px;
+        width: 100%;
+        gap: 7px;
+        height: auto;
+    }
+
+    .pie-de-pagina p {
+        padding-left: 15px;
+    }
+}
+
+/* Estilos para Scroll*/
+
+*::-webkit-scrollbar {
+    width: 7px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #151414;
+    border-radius: 10px;
+}

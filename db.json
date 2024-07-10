@@ -1,0 +1,58 @@
+{
+  "productos": [
+    {
+      "id": "98sa",
+      "nombre": "Porcelanato",
+      "precio": "13.000 x m2",
+      "imagen": "https://www.olanocorp.com.pe/chimboteold/13013-large_default/porcelanato-vitrificado-spider-negro-120x60.jpg"
+    },
+    {
+      "id": "1l44",
+      "nombre": "Mortero para porcelanato",
+      "precio": "5.200",
+      "imagen": "https://cr.epaenlinea.com/media/catalog/product/e/2/e26ff2fe-881f-442f-828f-949d9d15f23d.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=300&width=300&canvas=300:300"
+    },
+    {
+      "id": "12a8",
+      "nombre": "Fragua",
+      "precio": "1.800",
+      "imagen": "https://cr.epaenlinea.com/media/catalog/product/c/0/c080ea48-6bee-4366-8758-8db0a7a90481.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=300&width=300&canvas=300:300"
+    },
+    {
+      "id": "1g3k",
+      "nombre": "Nivelador para porcelanato",
+      "precio": "2.700 100 unidades",
+      "imagen": "https://www.ferrealtiro.com/wp-content/uploads/2022/11/Untitled-4-1.svg"
+    },
+    {
+      "id": "91h2",
+      "nombre": "Mesa antigravedad",
+      "precio": "70.000",
+      "imagen": "https://m.media-amazon.com/images/I/71q6I6N52BL.__AC_SX300_SY300_QL70_FMwebp_.jpg"
+    },
+    {
+      "id": "43f3",
+      "nombre": "Repisa flotante",
+      "precio": "80.000",
+      "imagen": "https://m.media-amazon.com/images/I/71lYQBeL-vL._AC_SL1500_.jpg"
+    },
+    {
+      "id": "237a",
+      "nombre": "Escritorio",
+      "precio": "120.000",
+      "imagen": "https://www.offimobile.com.mx/cdn/shop/products/E-MC1500X600X750_5000x.jpg?v=1648321105"
+    },
+    {
+      "id": "1h23",
+      "nombre": "Zapatera pequeña",
+      "precio": "100.000",
+      "imagen": "https://oechsle.vteximg.com.br/arquivos/ids/8976802-1500-1500/image-b32e30bc94fe469ab085fe64c9a1b064.jpg?v=637898106113270000"
+    },
+    {
+      "id": "78al1",
+      "nombre": "Perling 2x3",
+      "precio": "6.000",
+      "imagen": "https://sidocsa.com/wp-content/uploads/2018/05/Perlin-en-C-600x600-1-300x300.jpg"
+    }
+  ]
+}

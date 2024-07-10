@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "node": "^18.20.4"
+  },
+  "name": "alura-geek",
+  "version": "1.0.0",
+  "description": "online store about construction materials and furniture",
+  "main": "main.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kendri Bismarck Rocha Martinez",
+  "license": "ISC"
+}
