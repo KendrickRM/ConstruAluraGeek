@@ -1,44 +1,42 @@
+const API_URL = "http://localhost:3001/productos";
+
 export const getProducts = async () =>{
     try {
-        const res = await fetch("http://localhost:3001/productos",{
-            method: "GET",
-            headers:{
-                "Content-Type": "application/json"
-            }
-        });
-        const response = await res.json();
-        return await response;
+        const res = await fetch(API_URL);
+        if (!res.ok) throw new Error(`Error ${res.status} al obtener productos`);
+        return await res.json();
     } catch (error) {
-        console.log(error);
+        console.error(error);
+        return [];
     }
 }
 
 export const deleteProduct = async(id)=>{
     try {
-        const res = await fetch(`http://localhost:3001/productos/${id}`,{
-            method: "DELETE",
-            headers:{
-                "Content-Type": "application/json"
-            }
+        const res = await fetch(`${API_URL}/${id}`,{
+            method: "DELETE"
         });
-
-        const response = await res.json();
-        return await response;
+        if (!res.ok) throw new Error(`Error ${res.status} al eliminar el producto`);
+        return true;
     } catch (error) {
-        console.log(error);
+        console.error(error);
+        return false;
     }
 }
 
 export const createProduct = async(body)=>{
     try {
-        const res = await fetch(`http://localhost:3001/productos`,{
+        const res = await fetch(API_URL,{
             method: "POST",
             headers:{
                 "Content-Type": "application/json"
             },
             body:body
-        })
+        });
+        if (!res.ok) throw new Error(`Error ${res.status} al crear el producto`);
+        return await res.json();
     } catch (error) {
-        console.log(error);
+        console.error(error);
+        return null;
     }
 }

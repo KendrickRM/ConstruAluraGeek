@@ -10,19 +10,19 @@
       "id": "1l44",
       "nombre": "Mortero para porcelanato",
       "precio": "5.200",
-      "imagen": "https://cr.epaenlinea.com/media/catalog/product/e/2/e26ff2fe-881f-442f-828f-949d9d15f23d.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=300&width=300&canvas=300:300"
+      "imagen": "imagenes/MorteroPorcelanato.png"
     },
     {
       "id": "12a8",
       "nombre": "Fragua",
       "precio": "1.800",
-      "imagen": "https://cr.epaenlinea.com/media/catalog/product/c/0/c080ea48-6bee-4366-8758-8db0a7a90481.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=300&width=300&canvas=300:300"
+      "imagen": "imagenes/Fragua.jpg"
     },
     {
       "id": "1g3k",
       "nombre": "Nivelador para porcelanato",
       "precio": "2.700 100 unidades",
-      "imagen": "https://www.ferrealtiro.com/wp-content/uploads/2022/11/Untitled-4-1.svg"
+      "imagen": "imagenes/NiveladorPiso.png"
     },
     {
       "id": "91h2",
@@ -52,7 +52,7 @@
       "id": "78al1",
       "nombre": "Perling 2x3",
       "precio": "6.000",
-      "imagen": "https://sidocsa.com/wp-content/uploads/2018/05/Perlin-en-C-600x600-1-300x300.jpg"
+      "imagen": "imagenes/PerlingGalv.png"
     }
   ]
 }

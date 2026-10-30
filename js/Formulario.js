@@ -1,32 +1,24 @@
 import { createProduct } from "./CRUD.js";
+import AllProducts from "./AllProducts.js";
 
 export default{
     excecute(){
         const form = document.querySelector("#formulario-producto");
         const limpiarButton = document.querySelector("#boton-limpiar");
-        
-        form.addEventListener("submit",(e)=>{
-            e.preventDefault();
-            const data = new FormData(form);
-            const entries = Array.from(data.entries());
-            const producto = {};
-            
-            entries.forEach(function(entries){
-                producto[entries[0]] = entries[1];
-            });
-            
-            const jsonData = JSON.stringify(producto);
 
-            
-            createFunction(jsonData);
+        form.addEventListener("submit", async (e)=>{
+            e.preventDefault();
+            const producto = Object.fromEntries(new FormData(form).entries());
+
+            const creado = await createProduct(JSON.stringify(producto));
+            if (creado) {
+                form.reset();
+                AllProducts.ShowAllProducts();
+            }
         });
 
-        limpiarButton.addEventListener("click", (e)=>{
+        limpiarButton.addEventListener("click", ()=>{
             form.reset();
-        })
-
-        const createFunction = async(data)=>{
-            await createProduct(data);
-        };
+        });
     }
 }

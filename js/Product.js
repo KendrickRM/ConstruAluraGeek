@@ -1,42 +1,28 @@
 import { getProducts } from "./CRUD.js"
 
+const escapeHTML = (value) => String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+
 export const CardsProducts = async () =>{
 
-    try {
-        const products = await getProducts();
+    const products = await getProducts();
 
-        const cards = await Promise.all(products.map(async(product)=>{
-            
-            const plantilla = `
+    return products.map((product)=>`
                 <div class="card">
                     <figure>
-                        <img class="producto-img" src=${product.imagen} alt="img"/>
-                        <figcaption class="card-container--info">${product.nombre}</figcaption>
+                        <img class="producto-img" src="${escapeHTML(product.imagen)}" alt="${escapeHTML(product.nombre)}"/>
+                        <figcaption class="card-container--info">${escapeHTML(product.nombre)}</figcaption>
                     </figure>
                     <div class="card-container--value">
-                        <p>COP/${product.precio} </p>
-                        <button class="delete-button" data-id="${product.id}">
+                        <p>COP/${escapeHTML(product.precio)} </p>
+                        <button class="delete-button" data-id="${escapeHTML(product.id)}">
                         <img class="delete_logo"  src="imagenes/eliminar.png" alt="eliminar"/>
                         </button>
-                        </div>
+                    </div>
                 </div>
-            `;
-
-            return plantilla;
-            
-        }));
-
-        const data = cards.join("");
-
-        return data;
-
-    } catch (error) {
-        console.log(error);
-    }
-    
-
-
-
+            `).join("");
 }
-
-CardsProducts();
