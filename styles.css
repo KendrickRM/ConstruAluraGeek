@@ -164,6 +164,25 @@ html {
     margin-bottom: 8px;
 }
 
+.datos-formulario p {
+    width: 100%;
+    max-width: 300px;
+    margin: 4px 0 12px;
+    min-height: 1.2em;
+    color: #b11818;
+    font-size: 14px;
+    text-align: left;
+}
+
+.datos-formulario input[aria-invalid="true"] {
+    outline: 2px solid #b11818;
+}
+
+#boton-enviar:disabled {
+    opacity: .6;
+    cursor: wait;
+}
+
 .botones {
     display: flex;
     justify-content: center;
